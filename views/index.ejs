@@ -1,1 +1,65 @@
-<h1>EJS Demo</h1>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Tasks</title>
+</head>
+<body>
+<div class="container">
+    <!-- Page Content goes here -->
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span id="add-task-title" class="card-title">Add Task</span>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="task" type="text">
+                                    <label for="task">Add Your Task Here</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s6">
+                                    <input type="submit" value="Add task" class="btn">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <span id="my-tasks-title" class="card-title">My Tasks</span>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            My First Task
+                            <a href="#" class="teal-text lighten-2 secondary-content">X</a>
+                        </li>
+                        <li class="collection-item">
+                            My Second Task
+                            <a href="#" class="teal-text lighten-2 secondary-content">X</a>
+                        </li>
+                        <li class="collection-item">
+                            My Third Task
+                            <a href="#" class="teal-text lighten-2 secondary-content">X</a>
+                        </li>
+                        <li class="collection-item">
+                            My Last Task
+                            <a href="#" class="teal-text lighten-2 secondary-content">X</a>
+                        </li>
+                    </ul>
+                    <a href="#" id="clear-all-tasks" class="btn">Clear All Tasks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Compiled and minified JavaScript -->
+<script src="js/materialize.min.js"></script>
+</body>
+</html>
