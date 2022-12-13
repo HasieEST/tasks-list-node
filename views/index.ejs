@@ -18,10 +18,10 @@
                 <div class="card-content">
                     <span id="add-task-title" class="card-title">Add Task</span>
                     <div class="row">
-                        <form class="col s12">
+                        <form action="/" method="post" class="col s12">
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <input id="task" type="text">
+                                    <input name="task" id="task" type="text">
                                     <label for="task">Add Your Task Here</label>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                             </li>
                         <% }) %>
                     </ul>
-                    <a href="#" id="clear-all-tasks" class="btn">Clear All Tasks</a>
+                    <a href="clearAll/" id="clear-all-tasks" class="btn">Clear All Tasks</a>
                 </div>
             </div>
         </div>
