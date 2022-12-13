@@ -36,22 +36,12 @@
                 <div class="card-action">
                     <span id="my-tasks-title" class="card-title">My Tasks</span>
                     <ul class="collection">
-                        <li class="collection-item">
-                            My First Task
-                            <a href="#" class="teal-text lighten-2 secondary-content">X</a>
-                        </li>
-                        <li class="collection-item">
-                            My Second Task
-                            <a href="#" class="teal-text lighten-2 secondary-content">X</a>
-                        </li>
-                        <li class="collection-item">
-                            My Third Task
-                            <a href="#" class="teal-text lighten-2 secondary-content">X</a>
-                        </li>
-                        <li class="collection-item">
-                            My Last Task
-                            <a href="#" class="teal-text lighten-2 secondary-content">X</a>
-                        </li>
+                        <% tasksRender.forEach((taskEl) => { %>
+                            <li class="collection-item">
+                                <%= taskEl.task %>
+                                <a href="delete-task/<%= taskEl.id %>" class="secondary-content">x</a>
+                            </li>
+                        <% }) %>
                     </ul>
                     <a href="#" id="clear-all-tasks" class="btn">Clear All Tasks</a>
                 </div>
